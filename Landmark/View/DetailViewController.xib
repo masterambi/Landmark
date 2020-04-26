@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Landmark" customModuleProvider="target">
+            <connections>
+                <outlet property="landmarkDescription" destination="Dng-kb-fUK" id="uKx-Ri-Ynj"/>
+                <outlet property="landmarkImage" destination="bja-6w-rMc" id="ZQH-yM-bJe"/>
+                <outlet property="landmarkLocation" destination="fPa-re-jFn" id="djn-Ik-xyA"/>
+                <outlet property="landmarkMap" destination="F6o-dy-d64" id="8oa-2f-txS"/>
+                <outlet property="landmarkTitle" destination="lAP-7P-iYr" id="gTg-jn-4eS"/>
+                <outlet property="scrollView" destination="i7r-Zx-yjJ" id="v7z-f3-BOU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7r-Zx-yjJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Fs-rqM" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big_ben" translatesAutoresizingMaskIntoConstraints="NO" id="bja-6w-rMc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="RH9-Yc-JA5"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-vG-tzG">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Ben" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-7P-iYr">
+                                            <rect key="frame" x="16" y="185" width="382" height="41"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40097402597402598" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="lAP-7P-iYr" firstAttribute="leading" secondItem="FF9-vG-tzG" secondAttribute="leading" constant="16" id="XRV-bw-neU"/>
+                                        <constraint firstAttribute="trailing" secondItem="lAP-7P-iYr" secondAttribute="trailing" constant="16" id="duD-6b-3JF"/>
+                                        <constraint firstAttribute="bottom" secondItem="lAP-7P-iYr" secondAttribute="bottom" constant="24" id="fLw-FG-495"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8kJ-Ls-n3J">
+                                    <rect key="frame" x="16" y="274" width="382" height="64.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="p72-Yh-o8Z">
+                                            <rect key="frame" x="0.0" y="-0.5" width="22" height="22.5"/>
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="ZOO-ez-93C"/>
+                                                <constraint firstAttribute="height" constant="22" id="yha-FI-FK9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parliament Sqaure Elizabeth Tower - Houses of Parliament, Westminster, London SW1A 0AA England" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-re-jFn">
+                                            <rect key="frame" x="38" y="0.0" width="344" height="64.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-kb-fUK">
+                                    <rect key="frame" x="16" y="586.5" width="382" height="394.5"/>
+                                    <mutableString key="text">Elizabeth Tower is the name of the famous clock tower which stands at the Houses of Parliament. The name Big Ben is often used to describe the tower, the clock and the bell but the name was first given to the Great Bell. The Elizabeth Tower was completed in 1859 and the Great Clock started on 31 May. The Great Bell's strikes were heard for the first time on 11 July and the quarter bells first chimed on 7 September. All visits to Big Ben and the Elizabeth Tower tours are now suspended due to refurbishment with the last tour having taken place on 16 December 2016. Tours are scheduled to resume in early 2020 once the work is complete. Visitors can still book tickets for a number of other tours at the Houses of Parliament which take place on Saturdays throughout the year and on weekdays during Parliamentary recesses.</mutableString>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F6o-dy-d64">
+                                    <rect key="frame" x="16" y="362.5" width="382" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="sCG-Xl-544"/>
+                                    </constraints>
+                                </mapView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="FF9-vG-tzG" firstAttribute="height" secondItem="bja-6w-rMc" secondAttribute="height" id="5Oc-Yb-dnR"/>
+                                <constraint firstItem="8kJ-Ls-n3J" firstAttribute="top" secondItem="bja-6w-rMc" secondAttribute="bottom" constant="24" id="6dq-QB-WaF"/>
+                                <constraint firstItem="bja-6w-rMc" firstAttribute="leading" secondItem="45g-Fs-rqM" secondAttribute="leading" id="6yP-6f-d8a"/>
+                                <constraint firstItem="Dng-kb-fUK" firstAttribute="leading" secondItem="45g-Fs-rqM" secondAttribute="leading" constant="16" id="Efk-0t-GBa"/>
+                                <constraint firstAttribute="trailing" secondItem="8kJ-Ls-n3J" secondAttribute="trailing" constant="16" id="IMg-5M-6A6"/>
+                                <constraint firstItem="FF9-vG-tzG" firstAttribute="top" secondItem="45g-Fs-rqM" secondAttribute="top" id="Jdl-ef-grd"/>
+                                <constraint firstAttribute="trailing" secondItem="F6o-dy-d64" secondAttribute="trailing" constant="16" id="Ptk-sc-QkH"/>
+                                <constraint firstAttribute="trailing" secondItem="FF9-vG-tzG" secondAttribute="trailing" id="b1m-tD-1XZ"/>
+                                <constraint firstItem="F6o-dy-d64" firstAttribute="leading" secondItem="45g-Fs-rqM" secondAttribute="leading" constant="16" id="dAA-4q-fan"/>
+                                <constraint firstItem="bja-6w-rMc" firstAttribute="top" secondItem="45g-Fs-rqM" secondAttribute="top" id="dcd-3K-SiF"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dng-kb-fUK" secondAttribute="bottom" constant="24" id="eGZ-sE-nky"/>
+                                <constraint firstAttribute="trailing" secondItem="Dng-kb-fUK" secondAttribute="trailing" constant="16" id="etH-ub-Mjb"/>
+                                <constraint firstAttribute="trailing" secondItem="bja-6w-rMc" secondAttribute="trailing" id="f14-E6-f4Q"/>
+                                <constraint firstItem="F6o-dy-d64" firstAttribute="top" secondItem="8kJ-Ls-n3J" secondAttribute="bottom" constant="24" id="j1V-KU-k8x"/>
+                                <constraint firstItem="8kJ-Ls-n3J" firstAttribute="leading" secondItem="45g-Fs-rqM" secondAttribute="leading" constant="16" id="lis-l7-Pg4"/>
+                                <constraint firstItem="Dng-kb-fUK" firstAttribute="top" secondItem="F6o-dy-d64" secondAttribute="bottom" constant="24" id="ntS-Ul-Tkb"/>
+                                <constraint firstItem="FF9-vG-tzG" firstAttribute="leading" secondItem="45g-Fs-rqM" secondAttribute="leading" id="sI1-ob-9Sn"/>
+                                <constraint firstItem="FF9-vG-tzG" firstAttribute="width" secondItem="bja-6w-rMc" secondAttribute="width" id="uPA-kU-jhU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="45g-Fs-rqM" firstAttribute="height" secondItem="i7r-Zx-yjJ" secondAttribute="height" priority="250" id="R5X-DS-qAc"/>
+                        <constraint firstItem="45g-Fs-rqM" firstAttribute="width" secondItem="i7r-Zx-yjJ" secondAttribute="width" id="S4c-gS-cdf"/>
+                        <constraint firstAttribute="trailing" secondItem="45g-Fs-rqM" secondAttribute="trailing" id="fAb-BC-XBs"/>
+                        <constraint firstItem="45g-Fs-rqM" firstAttribute="leading" secondItem="i7r-Zx-yjJ" secondAttribute="leading" id="fpg-G5-scz"/>
+                        <constraint firstAttribute="bottom" secondItem="45g-Fs-rqM" secondAttribute="bottom" id="hVs-9r-UGS"/>
+                        <constraint firstItem="45g-Fs-rqM" firstAttribute="top" secondItem="i7r-Zx-yjJ" secondAttribute="top" id="q4x-CL-Cw7"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sg6-ZW-QGr"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Ged-vX-G7v"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="i7r-Zx-yjJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Uzg-cL-Kmb"/>
+                <constraint firstItem="i7r-Zx-yjJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WSh-wH-RQu"/>
+                <constraint firstItem="i7r-Zx-yjJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X6z-jR-ddr"/>
+                <constraint firstAttribute="bottom" secondItem="i7r-Zx-yjJ" secondAttribute="bottom" id="ePP-LN-4a4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="big_ben" width="1824" height="1216"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+    </resources>
+</document>
